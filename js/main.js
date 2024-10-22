@@ -9,9 +9,6 @@ myImageEl.className = "img-fluid d-block";
 myImageEl.alt = "white-lamp";
 
 myButtonEl.addEventListener("click", () => {
-  myImageEl.src = "./img/yellow_lamp.png";
-  mySwitchEl.innerHTML = "SPEGNI";
-
   if (myImageEl.src.includes("yellow_lamp.png")) {
     myImageEl.src = "./img/white_lamp.png";
     mySwitchEl.innerHTML = "ACCENDI";
