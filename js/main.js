@@ -6,9 +6,16 @@ const mySwitchEl = document.getElementById("switch-input");
 myFigureEl.append(myImageEl);
 myImageEl.src = "./img/white_lamp.png";
 myImageEl.className = "img-fluid";
+myImageEl.alt = "white-lamp";
 
 myButtonEl.addEventListener("click", () => {
-  myImgEl.scr = "./img/yellow_lamp.png";
-  mySwitchEl.innerHTML = "SPEGNI";
   myButtonEl.classList.toggle("btn-danger");
+  if (mySwitchEl.innerHTML.includes("ACCENDI")) {
+    mySwitchEl.innerHTML = "SPEGNI";
+  } else if (mySwitchEl.innerHTML.includes("SPEGNI")) {
+    mySwitchEl.innerHTML = "ACCENDI";
+  }
+
+  if (myImageEl.src.includes()) {
+  }
 });
