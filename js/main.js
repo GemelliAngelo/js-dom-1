@@ -12,10 +12,13 @@ myButtonEl.addEventListener("click", () => {
   myImageEl.src = "./img/yellow_lamp.png";
   mySwitchEl.innerHTML = "SPEGNI";
 
-  myButtonEl.classList.toggle("btn-danger");
-
-  if (myImageEl.src.includes("./img/yellow_lamp.png")) {
+  if (myImageEl.src.includes("yellow_lamp.png")) {
     myImageEl.src = "./img/white_lamp.png";
     mySwitchEl.innerHTML = "ACCENDI";
+  } else {
+    myImageEl.src = "./img/yellow_lamp.png";
+    mySwitchEl.innerHTML = "SPEGNI";
   }
+
+  myButtonEl.classList.toggle("btn-danger");
 });
