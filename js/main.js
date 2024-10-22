@@ -11,6 +11,10 @@ myImageEl.alt = "white-lamp";
 myButtonEl.addEventListener("click", () => {
   myImageEl.src = "./img/yellow_lamp.png";
 
+  if ((myImageEl.src = "./img/yellow_lamp.png")) {
+    myImageEl.src = "./img/white_lamp.png";
+  }
+
   myButtonEl.classList.toggle("btn-danger");
   if (mySwitchEl.innerHTML.includes("ACCENDI")) {
     mySwitchEl.innerHTML = "SPEGNI";
